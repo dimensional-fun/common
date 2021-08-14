@@ -1,8 +1,3 @@
-/**
- * Merges objects into one.
- *
- * @param {Dictionary} objects The objects to merge.
- */
 export function mergeObject<O extends Record<PropertyKey, any> = Record<PropertyKey, any>>(...objects: Partial<O>[]): O {
     const o: Record<PropertyKey, any> = {};
     for (const object of objects) {
