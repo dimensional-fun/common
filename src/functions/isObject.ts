@@ -6,5 +6,5 @@ import type { Dictionary } from "../types";
  * @param input The value to test
  */
 export function isObject(input: unknown): input is Dictionary {
-  return input !== null && typeof input === "object";
+    return input !== null && typeof input === "object";
 }
